@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="timer" >00:00</h1>
+
+        <div class="upper-container">
+
+            <div class="home">
+                <h2 class="text">HOME</h2>
+                <h2 id="hscore-el" class="score">00</h2>
+                <button onclick="incremHomeOne()">+1</button>
+                <button onclick="incremHomeTwo()">+2</button>
+                <button onclick="incremHomeThree()">+3</button>
+            </div>
+
+            
+            <div class="period">
+                <button onclick="incremPeriod()"  class="period-btn">1+</button>
+                <h2 id="pscore-el" class="period-score">00</h2>
+                <h2 class="period-text">PERIOD</h2>
+            </div>
+    
+            <div class="guest">
+                <h2 class="text">GUEST</h2>
+                <h2 id="gscore-el" class="score">00</h2>
+                <button onclick="incremGuestOne()">+1</button>
+                <button onclick="incremGuestTwo()">+2</button>
+                <button onclick="incremGuestThree()">+3</button>
+            </div>
+
+        </div>
+
+            <div class="foul">
+                
+                <div class="foul-home">
+                    <h3>Fouls</h3>
+                    <h2 id="hfoul-el">0</h2>
+                    <button onclick="incremHomeFoul()">+1</button>
+                </div>
+                
+                <div class="foul-guest">
+                    <h3>Fouls</h3>
+                    <h2 id="gfoul-el">0</h2>
+                    <button onclick="incremGuestFoul()">+1</button>
+                </div>
+            </div>
+    </div>
+</body>
+<script src="scrip.js"></script>
+</html>
